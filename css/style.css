@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+/*HEADER*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background: linear-gradient( to right, rgb(137, 137, 137), rgb(254, 254, 254));
+}
+
+.nav .logo{
+    width: 130px;
+    height: 70px;
+    margin-left: 25px;
+}
+
+.nav .basket{
+    position: relative;
+}
+
+.submenu #basketImage{
+    height: 50px;
+    width: 50px;
+    margin-right: 25px;
+}
+.submenu #basketContent{
+    display: none;
+}
+
+.submenu:hover #basketContent{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.buttonEmpty{
+    text-decoration: none;
+    border-color: black;
+    border-radius: 20px;
+    bottom: 90%;
+}
+
+.eraseFunko {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/*MAIN*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .title{
+    margin-top: 24px;
+    color: rgb(9, 9, 114);
+}
+
+.content .cardContent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.content .cardContent .card{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(7, 7, 7, 0.332);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px
+}
+
+.content .cardContent .card .cardImage{
+    width: 120px;
+    height: 120px;
+}
